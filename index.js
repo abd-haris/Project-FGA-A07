@@ -1,13 +1,10 @@
 // Awal bagian Ahmad Faozan
-var tombolMenu = document.getElementsByClassName('tombol-menu')[0];
-var menu = document.getElementsByClassName('menu')[0];
+const menuToggle = document.querySelector('.menu-toggle input');
+const nav = document.querySelector('nav ul');
 
-tombolMenu.onclick = function() {
-    menu.classList.toggle('active');
-}
-
-menu.onclick = function() {
-    menu.classList.toggle('active');
+menuToggle.addEventListener('click', function () {
+    nav.classList.toggle('slide');
+});
 }
 // Akhir bagian Ahmad Faozan
 
