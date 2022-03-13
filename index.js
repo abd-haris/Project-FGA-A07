@@ -5,7 +5,6 @@ const nav = document.querySelector('nav ul');
 menuToggle.addEventListener('click', function () {
     nav.classList.toggle('slide');
 });
-}
 // Akhir bagian Ahmad Faozan
 
 // Silahkan tambahkan javascript teman-teman disini jika diperlukan 
