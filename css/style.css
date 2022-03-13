@@ -1,0 +1,391 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+}
+
+#home   {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.logo a {
+    font-size: 48px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #ffffff;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    z-index: 1;
+    background-color: #42c2ff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: solid;
+}
+
+/* animation humberger  */
+span:nth-child(2)   {
+    transform-origin: 0 0;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2)  {
+    transform: rotate(45deg) translate(-1px, -1px);
+    background-color: #BBE1FA;
+}
+
+span:nth-child(4)   {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4)  {
+    background-color: #BBE1FA;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3)  {
+    opacity: 0;
+    transform: scale(0);
+}
+
+/* humberger menu */
+.menu-toggle    {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+.menu-toggle input  {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -3px;
+    left: -5px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menu-toggle span   {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #3282B8;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+
+h2 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #364f6b;
+    width: 100%;
+    line-height: 50px;
+}
+
+a.tbl-biru {
+    background: #85f4ff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-biru:hover {
+    background: #01eaff;
+    text-decoration: none;
+}
+
+a.tbl-mulai {
+    background: #42c2ff;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px 15px 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a.tbl-mulai:hover {
+    background: #70cbff;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Bagian Awal Abdul Haris */
+main    {
+    background-color: #EFFFFD;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 7%;
+
+}
+
+.txt-main   {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    color: #364f6b;
+    text-align: center;
+}
+
+figcaption  {
+    padding-top: 20px;
+    text-align: center;
+}
+
+figcaption a    {
+    color: #364f6b;
+    font-family: 'comic sans ms';
+    font-weight: bold;
+}
+
+figcaption p    {
+    font-family: 'comic sans ms';
+    font-weight: bold;
+    color: #42c2ff;
+}
+
+figure  {
+    margin-top: 50px;
+    background-color: #85F4FF;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+figure:hover    {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    transform: scale(1.01);
+}
+
+figure .img {
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.satu   {
+    background-image: url(../image/img1.png);
+}
+
+.dua   {
+    background-image: url(../image/img2.png);
+}
+
+.tiga   {
+    background-image: url(../image/img3.png);
+}
+
+.empat   {
+    background-image: url(../image/img4.png);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .header {
+        display: flex;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 80px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    a.tbl-biru {
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px;
+    }
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Bagian awal Abdul haris */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7%;
+    }
+    /* Bagian akhir Abdul haris */
+
+}
+
+@media  (max-width: 620px) {
+
+    .menu   {
+        float: none;
+    }
+
+    nav ul {
+		display: none;
+		position: absolute;
+	}
+	.menu-toggle    {
+		display: flex;
+		flex-direction: column;
+		height: 20px;
+		justify-content: space-between;
+		position: relative;
+		margin-left: 85%;
+		margin-top: 15%;
+        z-index: 2;
+	}
+
+    nav ul  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #42c2ff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: 1s;
+    }
+    nav ul li    {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+    }
+
+    nav ul li:hover    {
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+        box-shadow: 0 5px 5px -5px #222831,
+        0 -5px 5px -5px #222831;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        color: #222831;
+        font-size: 1.2em;
+        text-align: center;
+        color: #BBE1FA;
+    }
+    
+    nav ul.slide    {
+        transform: translateY(0);
+        opacity: 1;
+        width: 100%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-size: cover;
+        padding: 10%;
+    }
+
+} 
+
