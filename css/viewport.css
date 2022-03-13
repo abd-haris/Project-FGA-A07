@@ -1,0 +1,54 @@
+/*  
+  phone : 620px
+  tablet : 1000px
+*/
+
+@media (max-width: 1000px) {
+  
+/*  Awal bagian Ahmad faozan  */
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+/*  Akhir bagian Ahmad Faozan  */
+  
+/*  Tambahkan responsive  teman-teman untuk tablet  disini ya dan jangan lupa diberi komentar seperti diatas  */
+
+}
+
+@media (max-width: 620px) {
+
+
+}
+
