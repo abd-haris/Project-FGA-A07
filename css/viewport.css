@@ -6,6 +6,10 @@
 @media (max-width: 1000px) {
   
 /*  Awal bagian Ahmad faozan  */
+    .header {
+        display: flex;
+    }
+	
     .wrapper {
         width: 90%;
     }
