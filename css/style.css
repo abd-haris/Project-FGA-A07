@@ -39,8 +39,6 @@ nav {
     margin: auto;
     display: flex;
     line-height: 80px;
-    position: sticky;
-    position: -webkit-sticky; 
     top: 0;
     z-index: 1;
     background-color: #42c2ff;
@@ -185,5 +183,5 @@ p {
 
 /* Akhir bagian Ahmad Faozan */
 
-/* Silahkan tambahkan file css teman-teman disini dan jangan lupa dikasih komentar seperti ini /* Awal bagian (nama kalian)*/ ....  /* Akhir bagian (nama kalian) */ */
+/* Silahkan tambahkan file css teman-teman disini dan jangan lupa dikasih komentar seperti ini /* Awal bagian (nama kalian)*/ ....  /* Akhir bagian (nama kalian) */
 
