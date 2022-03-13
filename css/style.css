@@ -25,6 +25,12 @@ body {
     color: #ffffff;
 }
 
+#home   {
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
 .menu {
     float: right;
 }
