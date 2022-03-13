@@ -3,13 +3,12 @@
   tablet : 1000px
 */
 
-@media (max-width: 1000px) {
-  
-/*  Awal bagian Ahmad faozan  */
+@media screen and (max-width: 1000px) {
+/* Bagian awal Ahmad Faozan */
     .header {
         display: flex;
     }
-	
+
     .wrapper {
         width: 90%;
     }
@@ -18,6 +17,7 @@
         display: block;
         width: 100%;
         text-align: center;
+        font-size: 36px;
     }
 
     nav .menu {
@@ -28,7 +28,7 @@
     nav .menu ul {
         text-align: center;
         margin: auto;
-        line-height: 60px;
+        line-height: 80px;
     }
 
     nav .menu ul li {
@@ -36,6 +36,11 @@
         float: none;
     }
 
+    a.tbl-biru {
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px;
+    }
     section {
         display: block;
     }
@@ -45,22 +50,21 @@
         width: 100%;
         height: auto;
     }
-/*  Akhir bagian Ahmad Faozan  */
-  
-/*  Tambahkan responsive  teman-teman untuk tablet  disini ya dan jangan lupa diberi komentar seperti diatas  */
+/* Bagian Akhir Ahmad faozan */
 
-  /* Bagian awal Abdul haris */
+    /* Bagian awal Abdul haris */
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 7%;
     }
     /* Bagian akhir Abdul haris */
+
 }
 
-@media (max-width: 620px) {
-/* Bagian awal Ahmad Faozan */
-  .menu   {
+@media  (max-width: 620px) {
+/* Bagian awal ahmad faozan */
+    .menu   {
         float: none;
     }
 
@@ -122,16 +126,16 @@
         opacity: 1;
         width: 100%;
     }
-/*   Bagian akhir Ahmad faozan */
-  
-/*  Bagian awal Abdul Haris  */
-  main {
+/* Bagian akhir Ahmad faozan */
+	
+/* Bagian awal Abdul Haris */
+    main {
         display: grid;
         grid-template-columns: 1fr;
         background-size: cover;
         padding: 10%;
     }
-/*  Bagian akhir Abdul Haris  */
+/* Bagian akhir Abdul Haris */
 
-}
+} 
 
