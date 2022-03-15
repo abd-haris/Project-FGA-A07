@@ -260,4 +260,42 @@ figure .img {
 
 
 /*Tambahkan css teman-teman disini dan sesuaikan formatnya  */
+/* Bagian awal section */
+.section   {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.txt-section    {
+    padding-top: 12.5%;
+}
+
+.section h3 {
+    font-size: 2em;
+    display: grid;
+    justify-content: center;
+    font-size: bold;
+    margin-bottom: 5%;
+    color: #364f6b;
+}
+
+.section ul {
+    margin-left: 16%;
+}
+
+.section ul li {
+    margin-bottom:3%;
+    font-size: 1.2em;
+    list-style: circle;
+    list-style-image: -moz-linear-gradient(0.5, 0.6 #ddd);
+}
+
+.img-section    {
+    padding-top: 25%;
+    width: 100%;
+    height: 350px;
+    background-image: url(../image/img5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ /* Bagian akhir section */
