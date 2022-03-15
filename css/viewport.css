@@ -60,6 +60,23 @@
     }
     /* Bagian akhir Abdul haris */
 
+    /* bagian awal section */
+    .section ul {
+        margin-left: 0;
+        display: grid;
+        justify-content: center;
+    }
+
+    .section   {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-section    {
+        display: grid;
+        justify-content: center;
+    }
+    /* Bagian akhir section */
 }
 
 @media  (max-width: 620px) {
@@ -137,5 +154,21 @@
     }
 /* Bagian akhir Abdul Haris */
 
+/* Bagian awal section */
+    .section  h3  {
+        font-size: 1.5em;
+        padding-left: 10%;
+    }
+
+    .section ul    {
+        font-size: 0.8em;
+    }
+
+    .img-section    {
+        background-image: url(../image/img6.png);
+        display: grid;
+        justify-content: center;
+    }
+    /* Bagian akhir section */
 } 
 
