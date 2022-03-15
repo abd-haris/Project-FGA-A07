@@ -56,17 +56,39 @@ nav ul li {
     float: left;
 }
 
+/* menambahkan transition */
 nav ul li a {
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-align: center;
     padding: 0px 16px 0px 16px;
     text-decoration: none;
+    position: relative;
+    transition: color .4s ease-out;
 }
 
 nav ul li a:hover {
+    right: 0;
     text-decoration: solid;
 }
+
+/* menambahkan after pada a di li nya nav */
+nav ul li a:hover:after {
+    border-color: rgb(255, 255, 255);
+    right: 17%;
+}
+
+nav ul li a:after {
+    border-top: .1em solid rgb(255, 255, 255);
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: -0.3em;
+    left: 17%;
+    transition: right .4s cubic-bezier(0,.6,0,1),
+    border-color .4s ease-out;
+}
+/* batasnya disini */
 
 /* animation humberger  */
 span:nth-child(2)   {
