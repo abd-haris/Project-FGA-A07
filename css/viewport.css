@@ -77,6 +77,27 @@
         justify-content: center;
     }
     /* Bagian akhir section */
+	
+    /*  Bagian awal Alaikal fajri  */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-center  {
+        width: 100%;
+        display: grid;
+        justify-content: end;
+    }
+
+    .footer-right   {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        text-align: center;
+        margin: auto;
+    }
+    /* Bagian akhir Alaikal fajri */
 }
 
 @media  (max-width: 620px) {
@@ -170,5 +191,26 @@
         justify-content: center;
     }
     /* Bagian akhir section */
+	
+    /* Bagian awal Alaikal fajri */
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-left {
+        text-align: center;
+    }
+
+    footer .footer-center   {
+        display: grid;
+        justify-items: center;
+        box-sizing: border-box;
+        padding-bottom: 5%;
+    }
+
+    .txt-footer p  {
+        font-size: .9em;
+    }
+    /* Bagian akhir Alaikal fajri */
 } 
 
